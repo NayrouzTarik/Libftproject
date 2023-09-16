@@ -5,15 +5,16 @@
 # include <string.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include <stddef.h>
 # include <limits.h>
-# include <fcntl.h> 
+# include <fcntl.h>
+# include <stddef.h>
+
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}				t_list;
+}t_list;
 
 // Part 1 - Libc functions
 int		ft_isdigit(int c);
@@ -23,13 +24,14 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-char	*ft_strchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c); //not yet
+char	*ft_strrchr(const char *s, int c); //not yet
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_atoi(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len); //not yet
 void	*ft_memset(void *str, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *s1, const void *s2, size_t n);
@@ -48,7 +50,7 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *)); //not yet
 char	**ft_split(char const *s, char c);
 //part BONUS
 t_list	*ft_lstnew(void *data);

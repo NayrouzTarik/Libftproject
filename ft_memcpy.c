@@ -19,8 +19,3 @@ void *ft_memcpy(void *s1, const void *s2, size_t n)
     }
     return (dest);
 }
-
-/*ft_memcpy is a function designed to copy raw memory, typically
- used for copying binary data, arrays, or structures.
-  It's not meant for handling null-terminated strings
-   like functions such as strcpy or strncpy. so no need to add dst[i] = '\0'*/

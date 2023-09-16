@@ -1,6 +1,6 @@
 #include "libft.h"
 
-size_t		ft_len(int nb) //calculating the numbers of digit in an integer
+size_t		ft_len(int nb)
 {
 	int len;
 
@@ -10,12 +10,12 @@ size_t		ft_len(int nb) //calculating the numbers of digit in an integer
 	while (nb)
 	{
 		len++;
-		nb = nb / 10; //i work with int so any nb bellow 10 after div is equal to 0
+		nb = nb / 10;
 	}
 	return (len);
 }
 
-char		*ft_itoa(int n) //from int to string
+char		*ft_itoa(int n) 
 {
 	int		len;
 	char	*str;
